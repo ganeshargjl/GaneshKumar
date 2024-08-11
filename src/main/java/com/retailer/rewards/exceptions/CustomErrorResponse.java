@@ -4,6 +4,7 @@ public class CustomErrorResponse {
 
 	private String error;
 	private String message;
+	
 	public String getError() {
 		return error;
 	}
@@ -16,4 +17,5 @@ public class CustomErrorResponse {
 	public void setMessage(String message) {
 		this.message = message;
 	}
+
 }

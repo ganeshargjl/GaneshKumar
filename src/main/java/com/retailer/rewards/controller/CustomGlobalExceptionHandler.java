@@ -12,7 +12,6 @@ import com.retailer.rewards.exceptions.CustomErrorResponse;
 public class CustomGlobalExceptionHandler extends ResponseEntityExceptionHandler  
  
 	{
-
 	    @ExceptionHandler(RuntimeException.class)
 	    public ResponseEntity<CustomErrorResponse> customHandleNotFound(Exception ex) {
 	        CustomErrorResponse errors = new CustomErrorResponse();
