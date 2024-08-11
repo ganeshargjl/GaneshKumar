@@ -8,7 +8,7 @@
 - SQL server database to store the information.
 - Please check doc file provided in the project
 - Install Oracle Sql Developer locally and run it and change the db settings in application.properties file.
-- Do run the scrip.sql SQL Server to prepare the test data.
+- Do run the script.sql SQL Server to prepare the test data.
 - Please refer RewardsApplication.pdf - https://github.com/ganeshargjl/GaneshKumar/blob/main/RewardsApplication.pdf
 
 ```
