@@ -21,6 +21,8 @@ public class RewardsServiceImpl implements RewardsService{
 	
 	public Rewards getRewardsByCustomerId(Long customerId) 
 	{
+	
+		
 		Timestamp lastMonthTimestamp =getDateBasedOnOffSetDays(Constants.daysInMonth);
 		Timestamp lastSecondMonthTimestamp =getDateBasedOnOffSetDays(2*Constants.daysInMonth);
 		Timestamp lastThirdMonthTimestamp =getDateBasedOnOffSetDays(3*Constants.daysInMonth);
@@ -73,5 +75,6 @@ public class RewardsServiceImpl implements RewardsService{
 	{
 		return Timestamp.valueOf(LocalDateTime.now().minusDays(days));
 	}
+	
 	
 }

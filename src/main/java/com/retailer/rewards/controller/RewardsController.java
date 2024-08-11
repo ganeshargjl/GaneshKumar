@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.retailer.rewards.entity.Customer;
 import com.retailer.rewards.model.Rewards;
 import com.retailer.rewards.repository.CustomerRepository;
+import com.retailer.rewards.repository.TransactionRepository;
 import com.retailer.rewards.service.RewardsService;
 
 @RestController
@@ -25,7 +26,7 @@ public class RewardsController {
 	CustomerRepository customerRepository ;
 	
 	@GetMapping(value="/{customerId}/rewards",produces=MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<Rewards> getRewardsByCustomerId(@PathVariable("customerID") Long customerId)
+	public ResponseEntity<Rewards> getRewardsByCustomerId(@PathVariable("customerId") Long customerId)
 	{
 		Customer customer = customerRepository.findByCustomerId(customerId);
 		if (customer == null)
@@ -34,6 +35,7 @@ public class RewardsController {
 		}
 		
 		Rewards customerRewards = rewardsService.getRewardsByCustomerId(customerId);
+		
 		return new ResponseEntity<>(customerRewards,HttpStatus.OK);
 		}
 	{
