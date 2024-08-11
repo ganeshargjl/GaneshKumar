@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.retailer.rewards.entity.Customer;
 import com.retailer.rewards.model.Rewards;
 import com.retailer.rewards.repository.CustomerRepository;
-import com.retailer.rewards.repository.TransactionRepository;
 import com.retailer.rewards.service.RewardsService;
 
 @RestController
