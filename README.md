@@ -10,6 +10,7 @@
 - Install Oracle Sql Developer locally and run it and change the db settings in application.properties file.
 - Do run the script.sql SQL Server to prepare the test data.
 - Please refer RewardsApplication.pdf - https://github.com/ganeshargjl/GaneshKumar/blob/main/Test%20Case%20Documents/RewardsApplication.pdf
+- Request URL http://localhost:8080/customers/{customerId}/rewards
 - Request Body -> Sending the parameter and it should be the customerId of Long Datatype
 - Response Body ->
 - {
@@ -34,8 +35,6 @@
 Flow Diagram ![image](https://github.com/user-attachments/assets/9b3eff97-5289-4c7e-af9e-c4bd51b48e56)
 
 
-```
- http://localhost:8080/customers/{customerId}/rewards
 ```
 
 By `https://www.linkedin.com/in/ganesh-kumar-b45334138/'
