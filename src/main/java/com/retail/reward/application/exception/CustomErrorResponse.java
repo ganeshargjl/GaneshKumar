@@ -1,4 +1,4 @@
-package com.retailer.rewards.exceptions;
+package com.retail.reward.application.exception;
 
 public class CustomErrorResponse {
 
