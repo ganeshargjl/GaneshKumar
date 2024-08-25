@@ -9,7 +9,30 @@
 - Please check doc file provided in the project
 - Install Oracle Sql Developer locally and run it and change the db settings in application.properties file.
 - Do run the script.sql SQL Server to prepare the test data.
-- Please refer RewardsApplication.pdf - https://github.com/ganeshargjl/GaneshKumar/blob/main/RewardsApplication.pdf
+- Please refer RewardsApplication.pdf - https://github.com/ganeshargjl/GaneshKumar/blob/main/Test%20Case%20Documents/RewardsApplication.pdf
+- Request Body -> Sending the parameter and it should be the customerId of Long Datatype
+- Response Body ->
+- {
+    "customerId": 1001,
+    "monthlyRewards": [
+        {
+            "monthName": "July 2024",
+            "rewardPoints": 125
+        },
+        {
+            "monthName": "June 2024",
+            "rewardPoints": 210
+        },
+        {
+            "monthName": "May 2024",
+            "rewardPoints": 270
+        }
+    ],
+    "totalRewards": 605
+
+}
+Flow Diagram ![image](https://github.com/user-attachments/assets/9b3eff97-5289-4c7e-af9e-c4bd51b48e56)
+
 
 ```
  http://localhost:8080/customers/{customerId}/rewards
