@@ -193,8 +193,6 @@ Processes multiple transactions for specified customers.
     }
 ]
 ```
-
-This format presents the API endpoints, request and response formats, and a brief description of each endpoint's functionality in a clear and structured manner.
 ```
 
 By `https://www.linkedin.com/in/ganesh-kumar-b45334138/'
