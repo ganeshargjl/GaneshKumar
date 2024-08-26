@@ -1,6 +1,5 @@
 package com.retail.reward.application.entity;
 
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
