@@ -1,36 +1,31 @@
 package com.retail.reward.application.entity;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
-
 import java.time.LocalDate;
-
+import javax.persistence.*;
 
 @Entity
-@Table (name="TRANSACTION")
-@Getter
-@Setter
+@Table(name = "TRANSACTION")
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Transaction {
-	
+
 	@Id
-	@GeneratedValue(strategy =GenerationType.IDENTITY)
-	@Column (name="TRANSACTION_ID")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "transaction_seq")
+	@SequenceGenerator(name = "transaction_seq", sequenceName = "transaction_seq", allocationSize = 1)
+	@Column(name = "transaction_id")
 	private Long transactionId;
-	
-	@Column(name="CUSTOMER_ID")
+
+	@Column(name = "CUSTOMER_ID")
 	private Long customerId;
-	
-	@Column (name="TRANSACTION_DATE")
-	@Temporal(TemporalType.DATE)
-	private LocalDate transactionDate;
-	
-	@Column(name="AMOUNT")
+
+	@Column(name = "AMOUNT")
 	private double transactionAmount;
-	
+
+	@Column(name = "TRANSACTION_DATE")
+	private LocalDate transactionDate;
 
 }

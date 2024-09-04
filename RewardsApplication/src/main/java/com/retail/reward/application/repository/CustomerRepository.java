@@ -8,6 +8,5 @@ import com.retail.reward.application.entity.Customer;
 @Repository
 public interface CustomerRepository extends JpaRepository<Customer, Long> {
 
-		public Customer findByCustomerId(Long customerId);
-	}
-
+	public Customer findByCustomerId(Long customerId);
+}

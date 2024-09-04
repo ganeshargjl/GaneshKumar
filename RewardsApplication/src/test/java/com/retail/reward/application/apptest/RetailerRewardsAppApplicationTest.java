@@ -6,8 +6,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 public class RetailerRewardsAppApplicationTest {
 
-    @Test
-    public void contextLoads() {
-        // This test will pass if the application context loads successfully
-    }
+	@Test
+	public void contextLoads() {
+		// This test will pass if the application context loads successfully
+	}
 }
